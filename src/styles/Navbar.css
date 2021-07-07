@@ -1,0 +1,49 @@
+.Navbar{
+    position: sticky;
+    width: 100%;
+    top:0;
+    z-index: 1;
+    margin-top:-7rem;
+    display: flex;
+    background-color: transparent;
+}
+
+.nav-logo{
+    height: 7rem;
+    padding-left: 2rem;
+}
+
+.Navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 8;
+    align-items: center;
+}
+
+.Navbar ul li{
+    color: #fff;
+    font-family: monospace;
+    list-style: none;
+    font-size:1rem;
+    padding: 10px 20px;
+    transition: color 0.15s,font-size 1s;
+}
+.Navbar ul li:hover{
+    color: aqua;
+    font-size: 1.1rem;
+}
+
+.nav-btn{
+    color: #219ebc;
+    background-color:transparent ;
+    border: 2px solid #219ebc;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    transition:background-color 0.4s, color 0.4s;
+}
+
+.nav-btn:hover{
+    color: #1d3557;
+    background-color: #219ebc;
+}

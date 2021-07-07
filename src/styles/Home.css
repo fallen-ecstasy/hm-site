@@ -1,0 +1,56 @@
+.Home{
+    background: linear-gradient(270deg, rgba(195, 20, 50, 0.25),rgba(195, 20, 50, 0));
+    padding-left: 10rem;
+    height: 100vh;
+    padding-top: 10rem;
+    overflow: hidden;
+}
+
+.pre-Heading{
+    color:aqua;
+    font-family: monospace;
+    font-size: larger;
+}
+
+.Heading{
+    color: #fff;
+    font-size: 5rem;
+    font-family:'Roboto', sans-serif;
+    font-weight: 900;
+    padding-bottom: 1rem;
+}
+.two{
+    color:#ccc;
+}
+
+.about-me{
+    padding: 2rem 0rem;
+    width: 25rem;
+    color:#ccc;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+.get-in-touch{
+    color:#fff;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 1000;
+    font-size: larger;
+    padding-bottom: 1rem;
+}
+
+.Social-box{
+display: flex;
+}
+
+.Social-btn{
+    color: #fff;
+    font-size: 1.8rem;
+    padding-right:2rem;
+    transition: margin-top 0.5s, color 0.25s;
+}
+
+.Social-btn:hover{
+    color:aqua;
+    margin-top: -5px;
+}

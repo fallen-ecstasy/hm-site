@@ -1,0 +1,98 @@
+.About{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(270deg, rgba(195, 20, 50, 0.25),rgba(195, 20, 50, 0));
+    padding-left: 20rem;
+    padding-top: 10rem;
+    overflow: hidden;
+}
+
+.Heading{
+    display: flex;
+    align-items: center;
+}
+
+.Heading h1{
+    font-family: monospace;
+    font-size: 2rem;
+    padding-right: 1.5rem;
+    color: aqua;
+
+}
+
+.Heading h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    padding-right: 1.5rem;
+}
+
+.Heading hr{
+    width: 20rem;
+    border:none;
+    border-top: 1.5px solid #591f83;
+}
+
+.body{
+    display: flex;
+}
+
+.intro{
+    color: #eee;
+    width: 30rem;
+    padding: 3rem 0px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.intro p{
+    margin-bottom: 1rem;
+}
+
+.Skills{
+    display: flex;
+    padding-right: 0px 1rem;
+    margin-left: -2rem;
+    font-family: monospace;
+}
+
+.Skills ul li{
+    list-style: none;
+    display: flex;
+}
+.Skills h5{
+    color: aqua;
+    padding-right: 0.5rem;
+}
+
+
+.Photo{
+    height: 25rem;
+    width: 18.75rem;
+    margin-left: 10rem;
+}
+.Photo img{
+    width: 18.75rem;
+    position: static;
+    z-index: 2;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+.Photo div{
+    position: relative;
+    width: 18.75rem;
+    height: 25rem;
+    margin-top: -23rem;
+    margin-left: 2rem;
+    border:2px solid aqua;
+    transition: margin 0.4s;
+}
+
+.Photo:hover div{
+    margin-top:  -24rem;
+    margin-left: 1rem;
+}
+.Photo:hover img{
+    filter: grayscale(10%);
+}
