@@ -6,7 +6,7 @@ import About from './About';
 
 function App(prop) {
   return (
-    <div className="App custom-scrollbar">
+    <div className="App">
       <Navbar img={logo} className="Navbar-comp" />
       <Home />
       <About />

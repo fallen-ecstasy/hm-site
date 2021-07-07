@@ -1,12 +1,35 @@
 .Navbar{
-    position: sticky;
+    position: fixed;
     width: 100%;
     top:0;
-    z-index: 1;
-    margin-top:-7rem;
+    z-index: 2;
+    margin-top:0rem;
     display: flex;
     background-color: transparent;
 }
+@keyframes navAnimateout {
+    0% {background-color: #240B36; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;}
+    100% {background-color: transparent; box-shadow: none;}
+}
+.InActive{
+    box-shadow: none;
+    background-color:transparent;
+    animation-name: navAnimateout;
+    animation-duration: 0.4s;
+}
+
+@keyframes navAnimatein {
+    0% {background-color: transparent; box-shadow: none;}
+    100% {background-color: #240B36; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;}
+}
+.Active{
+    background-color: #240B36;
+    box-shadow: 0 4px 8px 0 rgba(0,0, 0, 0.2);
+    animation-name: navAnimatein;
+    animation-duration: 0.4s;
+}
+
+
 
 .nav-logo{
     height: 7rem;
@@ -19,25 +42,34 @@
     flex-grow: 8;
     align-items: center;
 }
-
 .Navbar ul li{
-    color: #fff;
-    font-family: monospace;
     list-style: none;
+}
+
+.nav-link{
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-family: monospace;
     font-size:1rem;
     padding: 10px 20px;
     transition: color 0.15s,font-size 1s;
 }
-.Navbar ul li:hover{
+.nav-link:hover{
     color: aqua;
     font-size: 1.1rem;
 }
+.link-active{
+    color: aqua;
+}
+
 
 .nav-btn{
     color: #219ebc;
     background-color:transparent ;
     border: 2px solid #219ebc;
     padding: 15px 20px;
+    margin-right: 1rem;
     border-radius: 10px;
     font-size: 1.1rem;
     transition:background-color 0.4s, color 0.4s;
