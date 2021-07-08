@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "@iconify-icons/akar-icons": "^1.1.16",
+    "@iconify-icons/fluent": "^1.1.22",
     "@iconify/react": "^1.1.4"
   }
 }

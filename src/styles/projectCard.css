@@ -1,0 +1,74 @@
+.project-tile{
+    width: 30%;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes projectTitleIn {
+    0% {width: 0; font-size: 0;}
+    100% {width: 14rem; font-size: 3rem;}
+}
+
+@keyframes projectTitleOut {
+    0% {width: 14rem; font-size: 3rem;}
+    100% {width: 0; font-size: 0;}
+}
+
+.inactive{
+    display: flex;
+    position: absolute;
+    background-color: rgb(255, 41, 123);
+    color: aliceblue;
+    font-size: 0rem;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    width: 0rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation-name:projectTitleOut;
+    animation-duration: 0.4s;
+    opacity: 80%;
+    border-radius: 25px;
+}
+
+.active{
+    display: flex;
+    position: absolute;
+    background-color: rgb(255, 41, 123);
+    color: aliceblue;
+    font-size: 3rem;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    width: 14rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation-name:projectTitleIn;
+    animation-duration: 0.4s;
+    opacity: 80%;
+    border-radius: 25px;
+}
+
+.active::first-line{
+    position: absolute;
+}
+
+
+.project-tile img{
+    position: relative;
+    margin: auto;
+    width: 150%;
+    filter: opacity(50%);
+    transition: filter 0.4s,width 1s;
+}
+
+.project-tile:hover img{
+    filter: opacity(100%);
+    width: 160%;
+}

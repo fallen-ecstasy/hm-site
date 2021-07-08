@@ -1,0 +1,16 @@
+.Services{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(270deg, rgba(195, 20, 50, 0.25),rgba(195, 20, 50, 0));
+    padding-left: 20rem;
+    padding-top: 0rem;
+    overflow: hidden;
+}
+
+.Card-grid{
+    margin-top: 3rem;
+    margin-left: -4rem;
+    width: 75rem;
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,48 @@
+.Skill{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(270deg, rgba(195, 20, 50, 0.25),rgba(195, 20, 50, 0));
+    padding-left: 20rem;
+    padding-top: 5rem;
+    overflow: hidden;
+    display: flex;
+}
+
+.side-menu ul{
+    display: flex;
+    flex-flow: column;
+    width: 8rem;
+    overflow: hidden;
+}
+
+.side-menu ul li{
+    list-style: none;
+}
+.tabs{
+    width: 100%;
+    padding: 1rem 0;
+    font-family: monospace;
+    font-size: 0.9rem;
+    color:#f72585;
+    background-color: #2e0947;
+    border:1px solid #7c1ebe;
+    transition: background-color 0.1s;
+}
+
+.tabs:hover{
+    background-color:#350a52;
+}
+
+.dialog-box{
+    background-color: #2e0947;
+    width:40rem;
+    height: 17.4rem;
+    font-family: 'Roboto',sans-serif;
+    line-height: 1.5;
+}
+
+.dialog-box h1{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    color:aliceblue
+}

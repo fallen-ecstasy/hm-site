@@ -1,0 +1,38 @@
+.card{
+    background-color: rgb(56, 0, 82);
+    margin: 2rem 1rem;
+    width:20rem;
+    height: 15rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color:aliceblue;
+    font-family: 'Roboto',sans-serif;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s;
+}
+
+.card:hover{
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card h5{
+    font-family: monospace;
+    color: aqua;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.card p{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 200;
+    font-size: 0.9rem;
+    margin:1rem 2rem;
+    text-align: center;
+}
+
+.card-icon{
+    padding-top: 2rem;
+    font-size: 3.5rem;
+}

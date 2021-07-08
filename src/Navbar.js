@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import './styles/Navbar.css';
 
 
@@ -28,8 +28,9 @@ window.addEventListener('scroll',backgroundChange);
             <img src={props.img} className="nav-logo" />
             <ul>
             <li><button className={(linkActive===1)?"nav-link link-active":"nav-link"} onClick="">01. About</button></li>
-            <li><button className="nav-link" onClick="">02. Experience</button></li>
+            <li><button className={(linkActive===2)?"nav-link link-active":"nav-link"} onClick="">02. Services</button></li>
             <li><button className="nav-link" onClick="">03. Projects</button></li>
+            <li><button className="nav-link" onClick="">04. Contact</button></li>
             <li><button className="nav-btn">Resume</button></li>
             </ul>
         </div>
