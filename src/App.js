@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './Navbar';
-import logo from './media/logo.png';
+import logo from './media/logo2.png';
 import Home from './Home';
 import About from './About';
 // import Skill from './Skill';
