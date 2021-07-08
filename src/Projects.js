@@ -14,7 +14,7 @@ import ProjectTile from './Comps/projectCard';
 function Projects() {
     return (
         <div className="Projects">
-            <div className="Heading"><h1>04.</h1><h2>Projects</h2><hr /></div>
+            <div className="Heading"><h1>03.</h1><h2>Projects</h2><hr /></div>
             <div className="project-grid">
                 <ProjectTile pic={project1} title="Project 1" />
                 <ProjectTile pic={project2} title="Project 2" />

@@ -1,0 +1,45 @@
+.Contact{
+    height: 90vh;
+    width: 100vw;
+    background: linear-gradient(270deg, rgba(195, 20, 50, 0.25),rgba(195, 20, 50, 0));
+    padding-top: 0rem;
+    padding-left: 30rem;
+    overflow: hidden;
+}
+
+.contact-body{
+    margin-left: -60rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto',sans-serif;
+    align-items: center;
+}
+
+.contact-body h5{
+    color:aliceblue;
+    font-size:05rem;
+}
+
+.contact-body p{
+    color: aliceblue;
+    width: 30rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+
+.contact-body button{
+    width: 15rem;
+    height: 4rem;
+    font-size: 1rem;
+    color: aqua;
+    border:2px solid aqua;
+    border-radius: 10px;
+    background-color: transparent;
+    margin: 1rem 0;
+    transition: background-color 0.2s;
+}
+
+.contact-body button:hover{
+    background-color: rgba(0, 255, 255, 0.1);
+}

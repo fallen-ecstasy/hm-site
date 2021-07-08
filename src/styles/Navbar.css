@@ -8,7 +8,7 @@
     background-color: transparent;
 }
 @keyframes navAnimateout {
-    0% {background-color: #240B36; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;}
+    0% {background-color: #240b36ab; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;}
     100% {background-color: transparent; box-shadow: none;}
 }
 .InActive{
@@ -20,10 +20,10 @@
 
 @keyframes navAnimatein {
     0% {background-color: transparent; box-shadow: none;}
-    100% {background-color: #240B36; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;}
+    100% {background-color: #240b36ab; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;}
 }
 .Active{
-    background-color: #240B36;
+    background-color: #240b36ab;
     box-shadow: 0 4px 8px 0 rgba(0,0, 0, 0.2);
     animation-name: navAnimatein;
     animation-duration: 0.4s;

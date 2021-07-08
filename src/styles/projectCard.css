@@ -33,7 +33,7 @@
     animation-name:projectTitleOut;
     animation-duration: 0.4s;
     opacity: 80%;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 .active{
@@ -52,7 +52,7 @@
     animation-name:projectTitleIn;
     animation-duration: 0.4s;
     opacity: 80%;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 .active::first-line{
