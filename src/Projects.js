@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import './styles/Projects.css';
-import project1 from './media/project1.jpeg';
+import project1 from './media/project1.jpg';
 import project2 from './media/project2.jpg';
-import project3 from './media/project3.png';
+import project3 from './media/project3.jpg';
 import project4 from './media/project4.jpg';
-import project5 from './media/project5.png';
+import project5 from './media/project5.jpg';
 import project6 from './media/project6.jpg';
 
 import ProjectTile from './Comps/projectCard';
