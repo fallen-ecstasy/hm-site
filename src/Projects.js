@@ -17,7 +17,7 @@ function Projects(prop) {
             <div className="Projects-m">
                 <div className="Heading-mobile"><h1>03.</h1><h2>Projects</h2><hr /></div>
                 <div className="project-grid-m">
-                    <ProjectTile view="Mobile" pic={project1} title="Project 1" />
+                    <ProjectTile view="Mobile" pic={project5} title="Project 1" />
                     <ProjectTile view="Mobile" pic={project2} title="Project 2" />
                     <ProjectTile view="Mobile" pic={project3} title="Project 3" />
                 </div>

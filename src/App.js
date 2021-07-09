@@ -14,8 +14,6 @@ import {isMobile} from 'react-device-detect';
 
 function App(prop) {
   const [Viewport] = useState(isMobile?"Mobile":"Desktop");
-  console.log(Viewport);
-
   return (
     <div className="App">
       <Navbar img={logo} className="Navbar-comp" view={Viewport} />

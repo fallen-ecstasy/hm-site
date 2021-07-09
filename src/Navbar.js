@@ -30,7 +30,6 @@ const backgroundChange = () => {
     }else{
         setLink(0);
     }
-    console.log(window.scrollY);
 }
 window.addEventListener('scroll',backgroundChange);
 
