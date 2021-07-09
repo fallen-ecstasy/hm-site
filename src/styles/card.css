@@ -36,3 +36,39 @@
     padding-top: 2rem;
     font-size: 3.5rem;
 }
+
+/* MOBILE */
+
+.card-m{
+    background-color: rgb(56, 0, 82);
+    margin: 1rem 0.5rem;
+    width:10rem;
+    height: 10rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color:aliceblue;
+    font-family: 'Roboto',sans-serif;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s;
+}
+
+.card-m:hover{
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card-m h5{
+    font-family: monospace;
+    color: aqua;
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 1rem 1rem;
+    text-align: center;
+}
+
+.card-icon-m{
+    padding-top: 2rem;
+    font-size: 3.5rem;
+}

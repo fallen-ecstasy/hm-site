@@ -1,14 +1,10 @@
 .Contact{
     height: 90vh;
-    width: 100vw;
-    background: linear-gradient(270deg, rgba(195, 20, 50, 0.25),rgba(195, 20, 50, 0));
     padding-top: 0rem;
-    padding-left: 30rem;
     overflow: hidden;
 }
 
 .contact-body{
-    margin-left: -60rem;
     display: flex;
     flex-direction: column;
     font-family: 'Roboto',sans-serif;
@@ -41,5 +37,49 @@
 }
 
 .contact-body button:hover{
+    background-color: rgba(0, 255, 255, 0.1);
+}
+
+/* MOBILE */
+
+.Contact-m{
+    padding-top: 2rem;
+    margin-left: 1rem;
+    height: 90vh;
+}
+.contact-body-m{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto',sans-serif;
+    align-items: center;
+}
+
+.contact-body-m h5{
+    color:aliceblue;
+    font-size:3rem;
+    padding-top: 2rem;
+}
+
+.contact-body-m p{
+    color: aliceblue;
+    width: 20rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+
+.contact-body-m button{
+    width: 15rem;
+    height: 4rem;
+    font-size: 1rem;
+    color: aqua;
+    border:2px solid aqua;
+    border-radius: 10px;
+    background-color: transparent;
+    margin: 1rem 0;
+    transition: background-color 0.2s;
+}
+
+.contact-body-m button:hover{
     background-color: rgba(0, 255, 255, 0.1);
 }

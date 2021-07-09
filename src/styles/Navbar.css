@@ -29,9 +29,6 @@
     animation-name: navAnimatein;
     animation-duration: 0.4s;
 }
-
-
-
 .nav-logo{
     height: 7rem;
     padding-left: 2rem;
@@ -79,4 +76,110 @@
 .nav-btn:hover{
     color: #1d3557;
     background-color: #219ebc;
+}
+
+
+/* MOBILE */
+
+.Navbar-mobile{
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 2;
+    margin-top:0rem;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+@keyframes navAnimateout {
+    0% {background-color: #240b36ab; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;}
+    100% {background-color: transparent; box-shadow: none;}
+}
+.InActive{
+    box-shadow: none;
+    background-color:transparent;
+    animation-name: navAnimateout;
+    animation-duration: 0.4s;
+}
+
+@keyframes navAnimatein {
+    0% {background-color: transparent; box-shadow: none;}
+    100% {background-color: #240b36ab; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;}
+}
+.Active{
+    background-color: #240b36ab;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 8px 0 rgba(0,0, 0, 0.2);
+    animation-name: navAnimatein;
+    animation-duration: 0.4s;
+}
+
+
+@keyframes SlideIn {
+    0%{margin-left: 30rem;}
+    100%{margin-left:-2.5rem;}
+}
+@keyframes SlideOut {
+    0%{margin-left: -2.5rem;}
+    100%{margin-left:30rem;}
+}
+
+.Sidebar{
+    padding-top: 5rem;
+    z-index: 2;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    margin-left:-2.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #240b36da;
+    backdrop-filter: blur(5px);
+}
+
+.Sidebar li{
+    list-style: none;
+}
+
+.Sidebar li button{
+    background-color: transparent;
+    width: 100%;
+    color: aqua;
+    border:none;
+    padding: 2rem 0;
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+
+.Out{
+    margin-left: 30rem;
+    animation-name: SlideOut;
+    animation-duration: 0.5s;
+}
+.In{
+    margin-left: -2.5rem;
+    animation-name: SlideIn;
+    animation-duration: 0.5s;
+}
+
+.nav-logo-mobile{
+    width: 5rem;
+    padding: 0.5rem 1rem;
+}
+
+.burger{
+    color: aqua;
+    transform:rotate(180deg);
+    align-self: flex-end;
+    margin-top: -6.5rem;
+    padding: 2rem;
+    padding-right: 2rem;
+    font-size: 2rem;
+}
+
+.cross{
+    color: aqua;
+    font-size: 2rem;
+    margin-top: -4rem;
+    padding: 2rem 2rem;
 }

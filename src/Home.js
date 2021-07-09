@@ -7,7 +7,27 @@ import twitterFill from '@iconify-icons/akar-icons/twitter-fill';
 import linkedinFill from '@iconify-icons/akar-icons/linkedin-fill';
 import dribbbleFill from '@iconify-icons/akar-icons/dribbble-fill';
 
-function Home() {
+function Home(prop) {
+    if(prop.view==="Mobile"){
+        return(
+            <div className="Home-mobile">
+            <div className="pre-Heading-m">Hi, my name is</div>
+            <div className="Heading-m"><span className="colorize-a">H</span>arsh <span className="colorize-a">M</span>isra</div>
+            <div className="Heading-m two-m">I build things for Web.</div>
+            <div className="about-me-m">I'm a Aspiring software engineer who specializes in building (and occasionally designing) exceptional digital experiences. Currently, I'm an Student at PSIT,Kanpur focused on building accessible, human-centered products.</div>
+
+
+            <div className="get-in-touch">GET IN TOUCH</div>
+            <div className="Social-box">
+            <Icon className="Social-btn" icon={githubOutlineFill} inline={true} />
+            <Icon className="Social-btn" icon={instagramFill} inline={true} />
+            <Icon className="Social-btn" icon={twitterFill} inline={true} />
+            <Icon className="Social-btn" icon={linkedinFill} inline={true} />
+            <Icon className="Social-btn" icon={dribbbleFill} inline={true} />
+            </div>
+        </div>
+        )
+    }else{
     return (
         <div className="Home">
             <div className="pre-Heading">Hi, my name is</div>
@@ -26,6 +46,7 @@ function Home() {
             </div>
         </div>
     )
+    }
 }
 
 export default Home

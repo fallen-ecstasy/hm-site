@@ -39,6 +39,7 @@
     "@iconify-icons/akar-icons": "^1.1.16",
     "@iconify-icons/fluent": "^1.1.22",
     "@iconify/react": "^1.1.4",
+    "react-device-detect": "^1.17.0",
     "react-scroll": "^1.8.2"
   }
 }

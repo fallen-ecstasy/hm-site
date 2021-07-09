@@ -1,15 +1,16 @@
 .About{
     height: 100vh;
-    width: 100vw;
-    background: linear-gradient(270deg, rgba(195, 20, 50, 0.25),rgba(195, 20, 50, 0));
-    padding-left: 20rem;
-    padding-top: 10rem;
+    padding-top: 5rem;
     overflow: hidden;
+    width: 75rem;
+    margin-left:10rem;
 }
 
 .Heading{
     display: flex;
     align-items: center;
+    animation-name: entryAnimation;
+    animation-duration: 1.5s;
 }
 
 .Heading h1{
@@ -44,6 +45,8 @@
     font-weight: 300;
     line-height: 1.5;
     font-size: 1rem;
+    animation-name: entryAnimation;
+    animation-duration: 1.5s;
 }
 
 .intro p{
@@ -71,6 +74,8 @@
     height: 25rem;
     width: 18.75rem;
     margin-left: 10rem;
+    animation-name: entryAnimation;
+    animation-duration: 1.5s;
 }
 .Photo img{
     width: 18.75rem;
@@ -94,5 +99,91 @@
     margin-left: 1rem;
 }
 .Photo:hover img{
+    filter: grayscale(10%);
+}
+
+
+/* MOBILE */
+
+.About-mobile{
+    width: 100%;
+    margin-left:2rem;
+    padding-top: 1rem;
+    height: 110vh;
+}
+
+.Heading-mobile{
+    display: flex;
+    align-items: center;
+}
+.Heading-mobile h1{
+    font-size: 2rem;
+    color: aqua;
+    font-family: monospace;
+}
+.Heading-mobile h2{
+    font-size: 2rem;
+    color: aliceblue;
+    font-family: 'Roboto',sans-serif;
+}
+.Heading-mobile hr{
+    width: 10rem;
+    margin-left: 1rem;
+    border:none;
+    border-top:2px solid #591f83;
+}
+
+.intro-m{
+    margin: 1rem 1rem;
+    color:aliceblue;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    width: 20rem;
+}
+.Skills-m{
+    display: flex;
+    padding: 1rem 1rem;
+    margin-left: -2rem;
+    font-family: monospace;
+}
+
+.Skills-m ul li{
+    list-style: none;
+    display: flex;
+}
+.Skills-m h5{
+    color: aqua;
+    padding-right: 0.5rem;
+}
+.Photo-m{
+    height: 25rem;
+    width: 18.75rem;
+    margin-left: 2rem;
+    animation-name: entryAnimation;
+    animation-duration: 1.5s;
+}
+.Photo-m img{
+    width: 18.75rem;
+    position: static;
+    z-index: 2;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+.Photo-m div{
+    position: relative;
+    width: 18.75rem;
+    height: 25rem;
+    margin-top: -24rem;
+    margin-left: 1rem;
+    border:2px solid aqua;
+    transition: margin 0.4s;
+}
+
+.Photo-m:hover div{
+    margin-top:  -24.5rem;
+    margin-left: 0.5rem;
+}
+.Photo-m:hover img{
     filter: grayscale(10%);
 }

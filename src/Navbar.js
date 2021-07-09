@@ -1,13 +1,18 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, {useState} from 'react';
 import './styles/Navbar.css';
-
+import { InlineIcon } from '@iconify/react';
+import list20Filled from '@iconify-icons/fluent/list-20-filled';
+import crossIcon from '@iconify-icons/akar-icons/cross';
 
 function Navbar(props) {
 
+    // States
 const [navbar, setNavbar] = useState(false);
 const [linkActive, setLink] = useState(0);
+const [slide, setslide] = useState(false);
 
+// Background State Change Function
 const backgroundChange = () => {
     if(window.scrollY >= 100){
         setNavbar(true);
@@ -25,19 +30,22 @@ const backgroundChange = () => {
     }else{
         setLink(0);
     }
-
+    console.log(window.scrollY);
 }
 window.addEventListener('scroll',backgroundChange);
 
+
+// Scrolling functions
 const scrollAbout = () =>{
-    window.scrollTo({
-        top:800,
-        left:0,
-        behavior:'smooth'
-    });
-    console.log("Clicked About")
+    setslide(false);
+        window.scrollTo({
+            top:750,
+            left:0,
+            behavior:'smooth'
+        });
 }
 const scrollServices = () =>{
+    setslide(false);
     window.scrollTo({
         top:1600,
         left:0,
@@ -45,6 +53,7 @@ const scrollServices = () =>{
     });
 }
 const scrollProjects = () =>{
+    setslide(false);
     window.scrollTo({
         top:2400,
         left:0,
@@ -52,6 +61,7 @@ const scrollProjects = () =>{
     });
 }
 const scrollContact = () =>{
+    setslide(false);
     window.scrollTo({
         top:3200,
         left:0,
@@ -59,6 +69,7 @@ const scrollContact = () =>{
     });
 }
 const scrollHome = () =>{
+    setslide(false);
     window.scrollTo({
         top:0,
         left:0,
@@ -66,6 +77,34 @@ const scrollHome = () =>{
     });
 }
 
+
+// Slide Function
+const SlideIn = () =>{
+    setslide(true);
+}
+const SlideOut = () =>{
+    setslide(false);
+}
+
+if(props.view === "Mobile"){
+
+    // Mobile View
+    return(
+        <div className={(navbar)?"Navbar-mobile Active":"Navbar-mobile InActive"}>
+            <img onClick={scrollHome} src={props.img} className="nav-logo-mobile" />
+            <InlineIcon onClick={SlideIn} icon={list20Filled} className="burger"/>
+            <ul className={slide?"Sidebar In":"Sidebar Out"}>
+            <InlineIcon onClick={SlideOut} icon={crossIcon} className="cross"/>
+            <li><button onClick={scrollAbout}>01. About</button></li>
+            <li><button onClick={scrollServices}>02. Services</button></li>
+            <li><button onClick={scrollProjects}>03. Projects</button></li>
+            <li><button onClick={scrollContact}>04. Contact</button></li>
+            <li><button className="nav-btn-mobile">Resume</button></li>
+            </ul>
+        </div>
+    )
+}else{
+    // Desktop View
     return (
         <div className={navbar?"Navbar Active":"Navbar InActive"}>
             <img onClick={scrollHome} src={props.img} className="nav-logo" />
@@ -78,6 +117,7 @@ const scrollHome = () =>{
             </ul>
         </div>
     )
+}
 }
 
 export default Navbar

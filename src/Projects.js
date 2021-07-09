@@ -11,7 +11,19 @@ import project6 from './media/project6.jpg';
 import ProjectTile from './Comps/projectCard';
 
 
-function Projects() {
+function Projects(prop) {
+    if(prop.view==="Mobile"){
+        return (
+            <div className="Projects-m">
+                <div className="Heading-mobile"><h1>03.</h1><h2>Projects</h2><hr /></div>
+                <div className="project-grid-m">
+                    <ProjectTile view="Mobile" pic={project1} title="Project 1" />
+                    <ProjectTile view="Mobile" pic={project2} title="Project 2" />
+                    <ProjectTile view="Mobile" pic={project3} title="Project 3" />
+                </div>
+            </div>
+        )
+    }else{
     return (
         <div className="Projects">
             <div className="Heading"><h1>03.</h1><h2>Projects</h2><hr /></div>
@@ -25,6 +37,7 @@ function Projects() {
             </div>
         </div>
     )
+    }
 }
 
 export default Projects
