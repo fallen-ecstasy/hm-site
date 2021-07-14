@@ -19,11 +19,11 @@ function Home(prop) {
 
             <div className="get-in-touch">GET IN TOUCH</div>
             <div className="Social-box">
-            <Icon className="Social-btn" icon={githubOutlineFill} inline={true} />
-            <Icon className="Social-btn" icon={instagramFill} inline={true} />
-            <Icon className="Social-btn" icon={twitterFill} inline={true} />
-            <Icon className="Social-btn" icon={linkedinFill} inline={true} />
-            <Icon className="Social-btn" icon={dribbbleFill} inline={true} />
+            <button onClick={window.location.href="https://github.com/fallen-ecstasy"}><Icon className="Social-btn" icon={githubOutlineFill} inline={true} /></button>
+            <button onClick={window.location.href="https://www.instagram.com/misra.harsh11/"}><Icon className="Social-btn" icon={instagramFill} inline={true} /></button>
+            <button ><Icon className="Social-btn" icon={twitterFill} inline={true} /></button>
+            <button onClick={window.location.href="https://www.linkedin.com/in/harsh-misra-295909202/"}><Icon className="Social-btn" icon={linkedinFill} inline={true} /></button>
+            <button ><Icon className="Social-btn" icon={dribbbleFill} inline={true} /></button>
             </div>
         </div>
         )

@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/About.css';
-import photo from './media/pic.jpg';
+import photo from './media/pic2.jpg';
 
 function About(prop) {
     if(prop.view==="Mobile"){
