@@ -14,7 +14,7 @@ function Contact(prop) {
         window.location.href="mailto:harsh.misra1101@gmail.com";
     }
     const wa = () =>{
-        window.location.href="https://wa.me/8840522368?text=Hello%2C+Harsh";
+        window.location.href="https://wa.me/918840522368?text=Hello%2C+Harsh";
     }
 
     if(prop.view==="Mobile"){

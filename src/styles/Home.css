@@ -92,6 +92,11 @@ animation-name: entryAnimation;
     font-weight: 900;
     color:#fff;
 }
+.colorize-a-m{
+    background:linear-gradient(#B2FEFA,#0ED2F7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .colorize-a{
     background:linear-gradient(#B2FEFA,#0ED2F7);
     -webkit-background-clip: text;

@@ -32,18 +32,18 @@ function Home(prop) {
         return(
             <div className="Home-mobile">
             <div className="pre-Heading-m">Hi, my name is</div>
-            <div className="Heading-m"><span className="colorize-a">H</span>arsh <span className="colorize-a">M</span>isra</div>
+            <div className="Heading-m"><span className="colorize-a-m">H</span>arsh <span className="colorize-a-m">M</span>isra</div>
             <div className="Heading-m two-m">I build things for Web.</div>
             <div className="about-me-m">I'm a Aspiring software engineer who specializes in building (and occasionally designing) exceptional digital experiences. Currently, I'm an Student at PSIT,Kanpur focused on building accessible, human-centered products.</div>
 
 
             <div className="get-in-touch">GET IN TOUCH</div>
             <div className="Social-box">
-            <button onClick={github}><Icon className="Social-btn" icon={githubOutlineFill} inline={true} /></button>
-            <button onClick={insta}><Icon className="Social-btn" icon={instagramFill} inline={true} /></button>
-            <button onClick={twitter}><Icon className="Social-btn" icon={twitterFill} inline={true} /></button>
-            <button onClick={linkedIn}><Icon className="Social-btn" icon={linkedinFill} inline={true} /></button>
-            <button onClick={dribbble}><Icon className="Social-btn" icon={dribbbleFill} inline={true} /></button>
+            <Icon onClick={github} className="Social-btn" icon={githubOutlineFill} inline={true} />
+            <Icon onClick={insta} className="Social-btn" icon={instagramFill} inline={true} />
+            <Icon onClick={twitter} className="Social-btn" icon={twitterFill} inline={true} />
+            <Icon onClick={linkedIn} className="Social-btn" icon={linkedinFill} inline={true} />
+            <Icon onClick={dribbble} className="Social-btn" icon={dribbbleFill} inline={true} />
             </div>
         </div>
         )
