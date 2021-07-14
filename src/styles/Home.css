@@ -113,9 +113,19 @@ animation-name: entryAnimation;
 
 .about-me-m{
     color: #fff;
-    opacity: 90%;
     font-weight: 300;
+    font-family: 'Roboto',sans-serif;
     width: 20rem;
     line-height: 1.5;
     padding-bottom: 2rem;
+}
+
+.about-me{
+    padding: 2rem 0rem;
+    width: 25rem;
+    color:#ccc;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    animation-name: entryAnimation;
+    animation-duration: 1.5s;
 }
