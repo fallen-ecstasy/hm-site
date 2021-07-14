@@ -6,6 +6,17 @@ import whatsappFill from '@iconify-icons/akar-icons/whatsapp-fill';
 import mail48Regular from '@iconify-icons/fluent/mail-48-regular';
 
 function Contact(prop) {
+
+    const linkedIn = () =>{
+        window.location.href="https://www.linkedin.com/in/harsh-misra-295909202/";
+    }
+    const mail = () =>{
+        window.location.href="mailto:harsh.misra1101@gmail.com";
+    }
+    const wa = () =>{
+        window.location.href="https://wa.me/8840522368?text=Hello%2C+Harsh";
+    }
+
     if(prop.view==="Mobile"){
         return (
             <div className="Contact-m">
@@ -16,9 +27,9 @@ function Contact(prop) {
                     Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
                     </p>
     
-                    <button><InlineIcon icon={linkedinFill} /> Connect on LinkedIn</button>
-                    <button><InlineIcon icon={whatsappFill}/> Say Hello on WhatsApp</button>
-                    <button><InlineIcon icon={mail48Regular} /> Ping me on Mail</button>
+                    <button onClick={linkedIn}><InlineIcon icon={linkedinFill} /> Connect on LinkedIn</button>
+                    <button onClick={wa}><InlineIcon icon={whatsappFill}/> Say Hello on WhatsApp</button>
+                    <button onClick={mail}><InlineIcon icon={mail48Regular} /> Ping me on Mail</button>
                 </div>
             </div>
         )
@@ -32,9 +43,9 @@ function Contact(prop) {
                 Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
                 </p>
 
-                <button><InlineIcon icon={linkedinFill} /> Connect on LinkedIn</button>
-                <button><InlineIcon icon={whatsappFill}/> Say Hello on WhatsApp</button>
-                <button><InlineIcon icon={mail48Regular} /> Ping me on Mail</button>
+                <button onClick={linkedIn}><InlineIcon icon={linkedinFill} /> Connect on LinkedIn</button>
+                <button onClick={wa}><InlineIcon icon={whatsappFill}/> Say Hello on WhatsApp</button>
+                <button onClick={mail}><InlineIcon icon={mail48Regular} /> Ping me on Mail</button>
             </div>
         </div>
     )

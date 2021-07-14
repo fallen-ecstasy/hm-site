@@ -52,6 +52,12 @@ animation-name: entryAnimation;
     animation-duration: 1.5s;
 }
 
+.Social-box button{
+     background-color: transparent;
+     border: none;
+     padding: 1rem;
+}
+
 .Social-btn{
     color: #fff;
     font-size: 1.8rem;
@@ -91,13 +97,17 @@ animation-name: entryAnimation;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.colorize-a:last-child{
+    padding-left: 1rem;
+}
 .two-m{
     color:#eee;
     padding-bottom: 1rem;
 }
 
 .about-me-m{
-    color: aliceblue;
+    color: #fff;
     opacity: 90%;
     font-weight: 300;
     width: 20rem;
